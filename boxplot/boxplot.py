@@ -52,3 +52,20 @@ plt.title("Distribuição das Horas de Estudos")
 plt.ylabel("Horas")
 
 plt.show()
+
+#boxplot mais profissional com duas variaveis
+plt.figure(figsize=(8, 5))
+
+plt.boxplot([
+    carregar_dados["horas_estudo"],
+    carregar_dados["sono"],
+],
+patch_artist=True
+)
+
+plt.xticks([1,2], ["Horas de estudos", "Horas de Sono"])
+
+plt.title("Horas de estudos VS Horas de Sono")
+plt.ylabel("Horas")
+
+plt.show()
