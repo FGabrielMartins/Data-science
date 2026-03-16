@@ -45,7 +45,7 @@ plt.figure(figsize=(8,5))
 
 plt.boxplot(
     carregar_dados["horas_estudo"],
-    patch_artist=True # preencher caixas com cor
+    patch_artist=True # preencher caixas com cor por padral (line2D)
 )
 
 plt.title("Distribuição das Horas de Estudos")
